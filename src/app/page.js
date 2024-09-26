@@ -15,7 +15,7 @@ export default function Home() {
             />
           </div>
           <h1 className="text-4xl font-bold mb-4">
-            Hello, I'm Vamsi Munjuluri
+            Hello, I&apos;m Vamsi Munjuluri
           </h1>
           <p className="text-lg">Developer by code, photographer by heart.</p>
         </section>
