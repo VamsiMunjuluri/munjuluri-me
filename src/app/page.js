@@ -2,10 +2,10 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-black text-gray-100">
-      <main className="max-w-5xl mx-auto p-8 md:p-16">
+    <div className="min-h-screen flex flex-col bg-black text-gray-100">
+      <main className="flex-grow max-w-5xl mx-auto p-8 md:p-16">
         <section className="text-center mb-16">
-          <div className="flex justify-center mb-8">
+          <div className="flex justify-center mb-4">
             <Image
               src="/images/portrait.jpg"
               alt="Vamsi Munjuluri"
@@ -14,7 +14,7 @@ export default function Home() {
               className="rounded-full object-cover border-2 border-gray-500"
             />
           </div>
-          <h1 className="text-4xl font-bold mb-4">
+          <h1 className="text-4xl font-bold mt-6 mb-4">
             Hello, I&apos;m Vamsi Munjuluri
           </h1>
           <p className="text-lg">Developer by code, photographer by heart.</p>
@@ -44,7 +44,7 @@ export default function Home() {
       </main>
 
       <footer className="text-center p-8 text-gray-500">
-        &copy; 2024 Vamsi Munjuluri. All rights reserved.
+        &copy; 2025 Vamsi Munjuluri. All rights reserved.
       </footer>
     </div>
   );
