@@ -6,7 +6,19 @@ export default function Home() {
   return (
     <div className="relative min-h-screen bg-black text-gray-100 overflow-hidden">
       {/* Background Beams behind everything */}
-      <BackgroundBeams />
+
+      <div className="absolute inset-0 z-0 overflow-hidden">
+        <div
+          className="
+      relative
+      w-[1120px] h-[1080px]
+      mx-auto
+      md:w-full md:h-full
+    "
+        >
+          <BackgroundBeams />
+        </div>
+      </div>
 
       {/* Foreground content */}
       <div className="relative z-10 flex flex-col min-h-screen md:min-h-[100dvh]">
