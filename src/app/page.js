@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React from "react";
 import { BackgroundBeams } from "../components/ui/background-beams";
-import Footer from "@/components/ui/Footer";
 
 export default function Home() {
   return (

@@ -1,6 +1,6 @@
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/next";
-import Footer from "@/components/ui/Footer";
+import Footer from "@/components/ui/footer";
 import Navbar from "@/components/ui/navbar";
 
 export const metadata = {
