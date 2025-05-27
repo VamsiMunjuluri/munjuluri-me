@@ -73,7 +73,7 @@ const SOCIALS = [
   },
   {
     name: "Instagram",
-    url: "https://instagram.com/yourhandle",
+    url: "https://instagram.com/thephotographykid",
     qr: "instagram.png",
     bg: "bg-gradient-to-br from-pink-500 to-yellow-400",
   },
@@ -85,7 +85,7 @@ const SOCIALS = [
   },
   {
     name: "X (Twitter)",
-    url: "https://twitter.com/yourhandle",
+    url: "https://x.com/vamsimunjuluri",
     qr: "x.png",
     bg: "bg-gradient-to-br from-neutral-700 to-neutral-900",
   },
