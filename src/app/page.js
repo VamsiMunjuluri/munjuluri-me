@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { BackgroundBeams } from "../components/ui/background-beams";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -55,33 +56,39 @@ export default function Home() {
                   >
                     • click me • click me • click me • click me • click me •
                     click me • click me • click me • click me • click me • click
-                    me •
+                    me
                   </textPath>
                 </text>
               </svg>
 
               {/* 🖼 Dual images: hover effect */}
               <div className="absolute top-1/2 left-1/2 w-[200px] h-[200px] -translate-x-1/2 -translate-y-1/2 rounded-full overflow-hidden border-2 border-gray-500">
-                {/* Static image */}
-                <Image
-                  src="/images/portrait-dev-resized.jpg"
-                  alt="Vamsi"
-                  fill
-                  className="object-cover transition-opacity duration-500 group-hover:opacity-0"
+                <Link
+                  href="/socials"
+                  className="inline-block"
                   draggable={false}
-                />
-                {/* Hover image */}
-                <Image
-                  src="/images/portrait-dev-ghibli-resized.jpg"
-                  alt="Ghibli Vamsi"
-                  fill
-                  className="object-cover opacity-0 transition-opacity duration-500 group-hover:opacity-100"
-                  draggable={false}
-                />
+                >
+                  {/* Static image */}
+                  <Image
+                    src="/images/portrait-dev-resized.jpg"
+                    alt="Vamsi"
+                    fill
+                    className="object-cover transition-opacity duration-500 group-hover:opacity-0"
+                    draggable={false}
+                  />
+                  {/* Hover image */}
+                  <Image
+                    src="/images/portrait-dev-ghibli-resized.jpg"
+                    alt="Ghibli Vamsi"
+                    fill
+                    className="object-cover opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+                    draggable={false}
+                  />
+                </Link>
               </div>
             </div>
             <h1 className="text-4xl font-bold mt-6 p-4 mb-4">
-              Hello, I&apos;m Vamsi Munjuluri
+              Hi, I&apos;m Vamsi Munjuluri!
             </h1>
             <p className="text-lg mb-8">
               Developer by code, photographer by heart.
