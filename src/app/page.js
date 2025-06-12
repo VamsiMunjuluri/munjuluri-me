@@ -1,29 +1,13 @@
 import Image from "next/image";
 import React from "react";
-import { BackgroundBeams } from "../components/ui/background-beams";
 import Link from "next/link";
 
 export default function Home() {
   return (
     <div className="relative min-h-screen bg-black text-gray-100 overflow-hidden">
-      {/* Background Beams behind everything */}
-
-      <div className="absolute inset-0 z-0 overflow-hidden">
-        <div
-          className="
-      relative
-      w-[1120px] h-[1080px]
-      mx-auto
-      md:w-full md:h-full
-    "
-        >
-          <BackgroundBeams />
-        </div>
-      </div>
-
       {/* Foreground content */}
-      <div className="relative min-h-screen z-10 flex flex-col pt-16">
-        <main className=" flex flex-col max-w-5xl mx-auto p-8 md:p-16">
+      <div className="relative min-h-screen z-10 flex flex-col pt-20">
+        <main className=" flex flex-col max-w-5xl mx-auto p-16">
           <div className="text-center">
             <div className="relative w-[240px] h-[240px] mx-auto group">
               {/* 🔄 Rotating circular text ring */}
@@ -94,13 +78,13 @@ export default function Home() {
               Developer by code, photographer by heart.
             </p>
 
-            <h2 className="text-2xl font-bold mb-6">Explore My Work</h2>
+            <h2 className="text-2xl font-bold md:pt-7 mb-6">Explore My Work</h2>
             <div className="flex justify-center gap-8 flex-wrap">
               <a
                 href="https://dev.munjuluri.me"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-500 hover:text-blue-700 text-lg font-medium"
+                className="text-green-400 hover:text-green-600 text-lg font-medium"
               >
                 Developer Portfolio
               </a>
@@ -108,7 +92,7 @@ export default function Home() {
                 href="https://lens.munjuluri.me"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-green-500 hover:text-green-700 text-lg font-medium"
+                className="text-blue-400 hover:text-blue-600 text-lg font-medium"
               >
                 Photography Portfolio
               </a>
