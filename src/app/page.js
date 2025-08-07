@@ -47,11 +47,7 @@ export default function Home() {
 
               {/* 🖼 Dual images: hover effect */}
               <div className="absolute top-1/2 left-1/2 w-[200px] h-[200px] -translate-x-1/2 -translate-y-1/2 rounded-full overflow-hidden border-2 border-gray-500">
-                <Link
-                  href="/socials"
-                  className="inline-block"
-                  draggable={false}
-                >
+                <Link href="/" className="inline-block" draggable={false}>
                   {/* Static image */}
                   <Image
                     src="/images/portrait-dev-resized.jpg"
@@ -81,7 +77,7 @@ export default function Home() {
             <h2 className="text-2xl font-bold md:pt-7 mb-6">Explore My Work</h2>
             <div className="flex justify-center gap-8 flex-wrap">
               <a
-                href="https://dev.munjuluri.me"
+                href="https://munjuluri.me"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-green-400 hover:text-green-600 text-lg font-medium"
